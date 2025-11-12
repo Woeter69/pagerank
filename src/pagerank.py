@@ -48,9 +48,9 @@ def pagerank(g,rounds,d = 0.85):
 
 
             for link in g.predecessors(node): # Gets the nodes that are connected to our current node 
-                link_rank = prev_pagerank[link] # Gets which node is it?
+                link_rank = prev_pagerank[link] # Gets the score from the last interation
 
-                out_edges = g.out_degree(link) # Gets how many edges comes to our current node
+                out_edges = g.out_degree(link) # Gets how many edges gets out of our current node (we're basically distributing its score to its connected nodes)
 
                 given_score = (link_rank / out_edges) # Formula derived by the pagerank founders (A way to calculate the Link score a number represting how often a person would stumble on a page going through by links)
 
