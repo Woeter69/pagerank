@@ -1,3 +1,2 @@
-import numpy
-import scipy
-import networkx
+import numpy as np
+import networkx as nx

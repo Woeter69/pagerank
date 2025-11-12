@@ -1,3 +1,2 @@
-# PageRank
+# Pagerank
 
-Discrete Mathematics Project
