@@ -75,30 +75,6 @@ def pagerank(g,rounds,d = 0.85):
         pagerank[node] = score
 
     return pagerank
-    
-
-g = nx.DiGraph()
-
-g.add_edge('A', 'B')
-g.add_edge('A', 'C')
-
-g.add_edge('B', 'C')
-
-g.add_edge('C', 'A')
-g.add_edge('C', 'D')
-
-g.add_edge('D', 'C')
-
-
-print(list(g.edges()), "\n")
-
-final_scores = pagerank(g,100)
-
-print(final_scores)
-
-# Many improvements are still remaining will make the final version in numpy because the calculation was some kind of matrix multiplication (which i don't understand yet so can't work on it) This is a very premitive version using maps. Though it is premitive it still works as a pagerank but not on a higher scale. 
-
-# As for the concepts of discrete mathematics it covers graph theory, linear algebra, and probability
 
 
 
