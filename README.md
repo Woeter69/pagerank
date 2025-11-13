@@ -155,5 +155,7 @@ This is an educational project demonstrating PageRank implementation and graph v
 - Larger graph support
 - Performance optimizations
 
+We currently need an api that sends this data to requested urls, servers and databases.
+
 
 
